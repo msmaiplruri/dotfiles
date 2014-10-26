@@ -54,3 +54,34 @@
           '(lambda *(
              (setq less-css-offset 2)
              (setq tab-width 2))))
+; whitespace
+(require 'whitespace)
+(global-whitespace-mode 1)
+(setq whitespace-style '(face
+                         trailing
+                         tabs
+                         spaces
+                         empty
+                         space-mark
+                         tab-mark))
+(setq whitespace-display-mappings
+      '((space-mark ?\u3000 [?\u25a1])
+        (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
+; スペースは全角のみ可視化
+(setq whitespace-space-regexp "\\(\u3000+\\)")
+; color
+(defvar my/bg-color "Black")
+(set-face-attribute 'whitespace-trailing nil
+                    :background my/bg-color
+                    :foreground "DeepPink"
+                    :underline t)
+(set-face-attribute 'whitespace-tab nil
+                    :background my/bg-color
+                    :foreground "LightSkyBlue"
+                    :underline t)
+(set-face-attribute 'whitespace-space nil
+                    :background my/bg-color
+                    :foreground "GreenYellow"
+                    :weight 'bold)
+(set-face-attribute 'whitespace-empty nil
+                    :background my/bg-color)
