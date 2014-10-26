@@ -1,0 +1,6 @@
+.DS_Store
+
+# emacs
+.emacs.d/auto-save-list/*
+
+!.gitkeep

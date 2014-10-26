@@ -16,10 +16,10 @@
 (setq scroll-step 1)
 ; バックアップファイル
 (setq backup-directory-alist
-      (cons (cons "\\.*$" (expand-file-name "~/.emacs.d/backup"))
+      (cons (cons "\\.*$" (expand-file-name "~/.emacs.d/auto-save-list"))
             backup-directory-alist))
 (setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "~/.emacs.d/backup/") t)))
+      `((".*" ,(expand-file-name "~/.emacs.d/auto-save-list/") t)))
 ; 行番号表示
 (require 'linum)
 (global-linum-mode t)

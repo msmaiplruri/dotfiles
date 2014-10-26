@@ -4,13 +4,15 @@ alias la='ls -AF'
 alias ll='ls -lF'
 
 alias grep='grep --color'
-function findstr() {
-    find "$1" -type f -print0 | xargs -0 grep -n "$2"
-}
 
 alias javac='javac -J-Dfile.encoding=UTF8'
 alias emacs='/usr/local/bin/emacs'
+
+# OSX
 alias swift='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
+
+# plugins
+source ~/.zsh/plugins/*.zsh
 
 # Env Path
 export GOROOT='/usr/local/Cellar/go/1.3.1/libexec'
@@ -45,31 +47,5 @@ setopt auto_pushd
 setopt correct
 setopt list_packed
 
-# vim mode
-# bindkey -v
-
-# cd $home
-function cdhome() {
-    echo
-    cd
-    zle reset-prompt
-}
-#zle -N cdhome
-#bindkey '\~' cdhome
-
-# cd ..
-function cdup() {
-    echo
-    cd ..
-    zle reset-prompt
-}
-#zle -N cdup
-#bindkey '\^' cdup
-
-# open .
-function opencur() {
-    open .
-    zle reset-prompt
-}
-zle -N opencur
-bindkey '^\@' opencur
+# emacs mode
+bindkey -e

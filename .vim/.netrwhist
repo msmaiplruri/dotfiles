@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/masami/git/kagero/src/wordpress/wp-content/themes/kagero/views/includes'
+let g:netrw_dirhist_2='/Users/masami/git/kagero/src/wordpress/wp-content/themes/kagero/views'
+let g:netrw_dirhist_3='/Users/masami/git/kagero/src/wordpress/wp-content/themes/kagero'
+let g:netrw_dirhist_4='/Users/masami/git/kagero/src/wordpress/wp-content/themes/kagero/views'
+let g:netrw_dirhist_5='/Users/masami/git/kagero/src/less'
+let g:netrw_dirhist_6='/Users/masami/Documents/tex/src'
+let g:netrw_dirhist_7='/Users/masami/Documents/tex'
+let g:netrw_dirhist_8='/Users/masami/Documents/tex/src'
+let g:netrw_dirhist_9='/usr/local/Cellar/gtkmm3/3.14.0/include/gtkmm-3.0/gtkmm'
