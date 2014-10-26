@@ -22,8 +22,11 @@ export GOPATH='/Users/masami/.golang'
 
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
+autoload colors
+colors
 #PROMPT="%B%{^[[31m%}%/#%{^[[m%}%b "
-PROMPT="[%n@%m]$ "
+#PROMPT="[%n@%m]$ "
+PROMPT="%{${fg[green]}%}%n@%m %{${fg[blue]}%}$%{${reset_color}%} "
 PROMPT2=${PROMPT}
 SPROMPT="%r is correct? [n,y,a,e]: "
 RPROMPT='[%~]'
