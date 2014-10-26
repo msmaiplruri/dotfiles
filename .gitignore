@@ -1,5 +1,8 @@
 .DS_Store
 
+# vim
+.netrwhist
+
 # emacs
 .emacs.d/auto-save-list/*
 
