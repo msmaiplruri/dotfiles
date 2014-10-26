@@ -21,7 +21,7 @@ function _t2p-clean {
     lst=(log aux dvi)
     for v in $lst; do
         fn=$v/$1.$v
-	    if [ -e $fn ]; then
+        if [ -e $fn ]; then
             rm $fn
             echo "rm $fn"
         fi
