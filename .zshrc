@@ -12,7 +12,9 @@ alias emacs='/usr/local/bin/emacs'
 alias swift='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
 
 # plugins
-source ~/.zsh/plugins/*.zsh
+for fn in ~/.zsh/plugins/*.zsh; do
+    source $fn
+done
 
 # Env Path
 export GOROOT='/usr/local/Cellar/go/1.3.1/libexec'
