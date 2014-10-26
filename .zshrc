@@ -24,7 +24,7 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 #PROMPT="%B%{^[[31m%}%/#%{^[[m%}%b "
 PROMPT="[%n@%m]$ "
-PROMPT2="[%n@%m]$ "
+PROMPT2=${PROMPT}
 SPROMPT="%r is correct? [n,y,a,e]: "
 RPROMPT='[%~]'
 
