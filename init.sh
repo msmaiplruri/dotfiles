@@ -4,7 +4,7 @@ lst=(.vimrc .vim .emacs.d .zshrc .zsh)
 
 for v in ${lst[@]}; do
     if [ ! -e ~/$v ]; then
-        ln -s $v ~/$v
+        ln -s $(pwd)/$v ~/$v
     fi
 done
 
