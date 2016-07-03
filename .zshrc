@@ -2,25 +2,13 @@
 alias ls='ls -GF'
 alias la='ls -AF'
 alias ll='ls -lF'
-
 alias grep='grep --color'
-
 alias javac='javac -J-Dfile.encoding=UTF8'
-alias emacs='/usr/local/bin/emacs'
-
-# OSX
-alias swift='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
 
 # plugins
 for fn in ~/.zsh/plugins/*.zsh; do
     source $fn
 done
-
-# Env Path
-export GOROOT='/usr/local/Cellar/go/1.3.1/libexec'
-export GOPATH='/Users/masami/.golang'
-
-export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 autoload colors
 colors
